@@ -10,7 +10,7 @@ This project demonstrates the ability to deploy an application to Control Plane 
 
 1. Existing Control Plane Org and GVC.
 2. Control Plane CLI: https://docs.controlplane.com/reference/cli
-3. Firebase Account: https://firebase.google.com/.
+3. Firebase Account: https://firebase.google.com/
    
 ## Steps to Deploy
 
@@ -41,7 +41,7 @@ This project demonstrates the ability to deploy an application to Control Plane 
         }
         ```   
 6. To configure reCAPTCHA v3:
-   1. Browse to: https://www.google.com/recaptcha/admin.
+   1. Browse to: https://www.google.com/recaptcha/admin
    2. The `Register a new site` page will be displayed or click the `+` button.
    3. Enter the following:
       1. Any name for the `Label`.
@@ -65,14 +65,17 @@ This project demonstrates the ability to deploy an application to Control Plane 
    2. Select `Sign-in method` from the top menu.
    3. Click `Add domain`. Enter the endpoint URL and click `Add`.
 9. Using the endpoint URL, the reCAPTCHA v3 domain must be updated.
-   1.  Return to: https://www.google.com/recaptcha/admin.
+   1.  Return to: https://www.google.com/recaptcha/admin
    2.  Click the gear icon.
    3.  In the `Domains` section, to the right of the `+`, enter the endpoint URL and press enter.
    4.  Delete the `example.com` by clicking the `X` to the left of that domain.
    5.  Scroll to the bottom and click `Save`.
 
-The application has now been fully configured and ready to serve traffic.
+**The application has now been fully configured and ready to serve traffic.**
 
-Browse to the endpoint URL and the application will be displayed. Click the `Sign In` button to log in using your Google credentials. Once logged in, you can enter a chat message. Those messages are persisted using Firestore and are pushed to other users logged into the chat application.
+- Browse to the endpoint URL and the application will be displayed. 
+- Click the `Sign In` button to log in using your Google credentials. 
+- Once logged in, you can enter a chat message. Those messages are persisted using Firestore and are pushed to other users logged into the chat application.
+- The header displays your name and the cloud provider that served the request.
 
 
